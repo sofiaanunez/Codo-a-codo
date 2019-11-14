@@ -16,7 +16,7 @@ public class MainPersona {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        JOptionPane.showMessageDialog(null, "Bienvenido");
+        JOptionPane.showMessageDialog(null, "Bienvenidx");
         
         Persona usuario = new Persona();
         
