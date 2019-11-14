@@ -36,6 +36,7 @@ public class MainPersona {
         usuario.setSexo(sexo);
         usuario.setPeso(peso);
         usuario.setAltura(alturaD);
+        usuario.calcularIMC();
         
         System.out.println(usuario.toString());
 
