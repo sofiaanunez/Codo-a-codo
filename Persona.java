@@ -139,10 +139,10 @@ public class Persona {
     } 
     }
     
-    public boolean esMayorDeEdad(){
-    boolean legalidad = true;
-    if(edad > 18){legalidad = true;}
-    else { legalidad = false;}
+    public String esMayorDeEdad(){
+    String legalidad = "";
+    if(edad > 18){legalidad = "mayor de edad";}
+    else { legalidad = "menor de edad";}
     return legalidad;
     }
     
@@ -159,7 +159,8 @@ public class Persona {
     }
     
     public String toString(){
-    return "\nNombre: " + nombre + "\nEdad: " + edad + "\nDNI: " + getDni() + "\nSexo: " + sexo + "\nPeso: " + getPeso();
+        return "\nNombre: " + nombre + "\nEdad: " + edad + "\nDNI: " + getDni() + "\nSexo: " + sexo + "\nPeso: " + getPeso()
+            + "\nSu peso es " + calcularIMC() + "\nUsted es " + esMayorDeEdad();
     }
 
 
